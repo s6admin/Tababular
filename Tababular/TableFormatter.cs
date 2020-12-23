@@ -73,9 +73,9 @@ namespace Tababular
                 EnforceMaxWidth(table, hints.MaxTableWidth.Value);
             }
 
-            const char horizontalLineChar = '-';
-            const char verticalLineChar = '|';
-            const char cornerChar = '+';
+            const char horizontalLineChar = ' '; //'-';
+            const char verticalLineChar = ' '; //'|';
+            const char cornerChar = ' '; //'+';
 
             var skipHorizontalLines = hints.CollapseVerticallyWhenSingleLine
                                       && !table.HasCellWith(c => c.Lines.Length > 1);
